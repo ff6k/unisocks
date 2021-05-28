@@ -8,7 +8,8 @@ import Web3ReactManager from '../components/Web3ReactManager'
 import AppProvider from '../context'
 import Main from './Main'
 
-const PROVIDER_URL = process.env.REACT_APP_PROVIDER_URL
+const PROVIDER_URL = "https://mainnet.infura.io/v3/4acad922d4a3480484372a48c69d2a5a"
+// const PROVIDER_URL = process.env.REACT_APP_PROVIDER_URL
 
 const { NetworkOnlyConnector, InjectedConnector, WalletConnectConnector } = Connectors
 const Network = new NetworkOnlyConnector({
@@ -24,6 +25,8 @@ const WalletConnect = new WalletConnectConnector({
   defaultNetwork: 1
 })
 const connectors = { Network, Injected, WalletConnect }
+
+console.log(connectors);
 
 export default function App() {
   return (
