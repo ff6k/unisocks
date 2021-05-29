@@ -29,7 +29,7 @@ export default function Body({ totalSupply, ready, balanceSOCKS }) {
   function sign() {
     const timestampToSign = Math.round(Date.now() / 1000)
     const signer = library.getSigner()
-    const message = `This signature is proof that I control the private key of ${account} as of the timestamp ${timestampToSign}.\n\n It will be used to access my Unisocks order history.`
+    const message = `This signature is proof that I control the private key of ${account} as of the timestamp ${timestampToSign}.\n\n It will be used to access my HFSP Hat order history.`
     signer.signMessage(message).then(returnedSignature => {
       setTimestamp(timestampToSign)
       setSignature(returnedSignature)
@@ -69,7 +69,7 @@ export default function Body({ totalSupply, ready, balanceSOCKS }) {
         <Header totalSupply={totalSupply} ready={ready} balanceSOCKS={balanceSOCKS} setShowConnect={() => {}} />
         <Content>
           <p>
-            You can use this page to check the status of your Unisocks order, please bookmark it for future reference.
+            You can use this page to check the status of your HFSP Hat order, please bookmark it for future reference.
           </p>
 
           {error && <p>Error</p>}

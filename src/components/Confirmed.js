@@ -8,6 +8,8 @@ import close from './Gallery/close.svg'
 import sent from './Gallery/sent.png'
 import { useAppContext } from '../context'
 
+import logo from './Gallery/logo.png'
+
 const ConfirmedFrame = styled.div`
   width: 100%;
   /* padding: 2rem; */
@@ -22,10 +24,7 @@ function Controls({ closeCheckout }) {
   return (
     <FrameControls>
       <Unicorn>
-        <span role="img" aria-label="unicorn">
-          🦄
-        </span>{' '}
-        Pay
+        <img src={logo} style={{ width: 100, height: 35 }} />
       </Unicorn>
       <Close src={close} onClick={() => closeCheckout()} alt="close" />
     </FrameControls>

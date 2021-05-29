@@ -4,6 +4,8 @@ import { useAppContext } from '../../context'
 import { Header } from '../Body'
 import { amountFormatter } from '../../utils'
 
+import test from '../../components/Gallery/test.png'
+
 export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOCKS }) {
   const [state] = useAppContext()
 
@@ -11,13 +13,11 @@ export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOC
     <AppWrapper overlay={state.visible}>
       <Header totalSupply={totalSupply} ready={ready} balanceSOCKS={balanceSOCKS} setShowConnect={() => {}} />
       <Content>
-        <Title>SOCKS Stats</Title>
+        <Title>HFSP Stats</Title>
         <Description>
           <p>
-            <span role="img" aria-label="socks">
-              🧦
-            </span>
-            Initial SOCKS
+            <img src={test} style={{ width: 13, height: 13, marginRight:5 }} />
+            Initial HFSP
           </p>
           <p>500</p>
         </Description>
@@ -26,7 +26,7 @@ export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOC
             <span role="img" aria-label="socks">
               🔥
             </span>
-            Redeemed SOCKS
+            Redeemed HFSP
           </p>
           <p>{500 - totalSupply}</p>
         </Description>
@@ -35,13 +35,13 @@ export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOC
             <span role="img" aria-label="socks">
               💦
             </span>
-            SOCKS Pool
+            HFSP Pool
           </p>
           <p>{amountFormatter(reserveSOCKSToken, 18, 0)}</p>
         </Description>
         <Shim />
         <Footer>
-          The price of SOCKS changes when tokens are bought and sold.
+          The price of HFSP changes when tokens are bought and sold.
           <br />
           <br />
           <a

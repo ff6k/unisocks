@@ -10,6 +10,8 @@ import RedeemButton from '../../components/RedeemButton'
 import Checkout from '../../components/Checkout'
 import { amountFormatter } from '../../utils'
 
+import logo from '../../components/Gallery/logo.png'
+
 export function Header({ totalSupply, ready, balanceSOCKS, setShowConnect }) {
   const { account, setConnector } = useWeb3Context()
 
@@ -23,10 +25,11 @@ export function Header({ totalSupply, ready, balanceSOCKS, setShowConnect }) {
     <HeaderFrame balanceSOCKS={balanceSOCKS}>
       <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
         <Unicorn>
-          <span role="img" aria-label="unicorn">
+          <img src={logo} style={{ width: 100, height: 35 }} />
+          {/* <span role="img" aria-label="unicorn">
             🦄
           </span>{' '}
-          Unisocks
+          Unisocks */}
         </Unicorn>
       </Link>
       <div style={{ display: 'flex', flexDirection: 'row' }}>

@@ -37,7 +37,7 @@ export async function handler(event) {
   }
 
   const addressOfSigner = ethers.utils.verifyMessage(
-    `This signature is proof that I control the private key of ${address} as of the timestamp ${timestamp}.\n\n It will be used to access my Unisocks order history.`,
+    `This signature is proof that I control the private key of ${address} as of the timestamp ${timestamp}.\n\n It will be used to access my HFSP Hat order history.`,
     signature
   )
   if (addressOfSigner !== address || Math.round(Date.now() / 1000) - timestamp >= 60 * 60) {

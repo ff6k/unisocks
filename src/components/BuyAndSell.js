@@ -8,6 +8,7 @@ import IncrementToken from './IncrementToken'
 import { useAppContext } from '../context'
 import { ERROR_CODES, amountFormatter, TRADE_TYPES } from '../utils'
 import test from './Gallery/test.png'
+import logo from './Gallery/logo.png'
 // import { ethers } from 'ethers'
 
 export function useCount() {
@@ -204,12 +205,9 @@ export default function BuyAndSell({
       <TopFrame>
         {/* <button onClick={() => fake()}>test</button> */}
         <Unicorn>
-          <span role="img" aria-label="unicorn">
-            🦄
-          </span>{' '}
-          Pay
+          <img src={logo} style={{ width: 100, height: 35 }} />
         </Unicorn>
-        <ImgStyle src={test} alt="Logo" />
+        {/* <ImgStyle src={test} alt="Logo" /> */}
         <InfoFrame pending={pending}>
           <CurrentPrice>
             {/* {dollarPrice && `$${amountFormatter(dollarPrice, 18, 2)} USD`} */}
