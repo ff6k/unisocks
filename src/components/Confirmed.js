@@ -24,7 +24,7 @@ function Controls({ closeCheckout }) {
   return (
     <FrameControls>
       <Unicorn>
-        <img src={logo} style={{ width: 100, height: 35 }} />
+        <img src={logo} style={{ width: 100, height: 35 }} alt=""/>
       </Unicorn>
       <Close src={close} onClick={() => closeCheckout()} alt="close" />
     </FrameControls>

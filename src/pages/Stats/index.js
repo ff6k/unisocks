@@ -16,7 +16,7 @@ export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOC
         <Title>HFSP Stats</Title>
         <Description>
           <p>
-            <img src={test} style={{ width: 13, height: 13, marginRight:5 }} />
+            <img src={test} style={{ width: 13, height: 13, marginRight:5 }} alt=""/>
             Initial HFSP
           </p>
           <p>500</p>

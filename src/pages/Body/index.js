@@ -25,11 +25,7 @@ export function Header({ totalSupply, ready, balanceSOCKS, setShowConnect }) {
     <HeaderFrame balanceSOCKS={balanceSOCKS}>
       <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
         <Unicorn>
-          <img src={logo} style={{ width: 100, height: 35 }} />
-          {/* <span role="img" aria-label="unicorn">
-            🦄
-          </span>{' '}
-          Unisocks */}
+          <img src={logo} style={{ width: 100, height: 35}} alt={""} />
         </Unicorn>
       </Link>
       <div style={{ display: 'flex', flexDirection: 'row' }}>

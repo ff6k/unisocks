@@ -37,7 +37,7 @@ export function Controls({ closeCheckout, theme, type }) {
   return (
     <FrameControls>
       <Unicorn theme={theme}>
-        <img src={logo} style={{ width: 100, height: 35 }} />
+        <img src={logo} style={{ width: 100, height: 35 }} alt=""/>
         <span style={{ color: '#737373' }}>
           {' '}
           {type === 'confirm' ? ' / Order Details' : type === 'shipping' ? ' / Shipping Details' : ''}

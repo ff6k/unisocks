@@ -7,7 +7,6 @@ import SelectToken from './SelectToken'
 import IncrementToken from './IncrementToken'
 import { useAppContext } from '../context'
 import { ERROR_CODES, amountFormatter, TRADE_TYPES } from '../utils'
-import test from './Gallery/test.png'
 import logo from './Gallery/logo.png'
 // import { ethers } from 'ethers'
 
@@ -205,7 +204,7 @@ export default function BuyAndSell({
       <TopFrame>
         {/* <button onClick={() => fake()}>test</button> */}
         <Unicorn>
-          <img src={logo} style={{ width: 100, height: 35 }} />
+          <img src={logo} style={{ width: 100, height: 35 }} alt={""}/>
         </Unicorn>
         {/* <ImgStyle src={test} alt="Logo" /> */}
         <InfoFrame pending={pending}>
@@ -317,11 +316,11 @@ const InfoFrame = styled.div`
   align-items: center;
 `
 
-const ImgStyle = styled.img`
-  width: 225px;
-  padding: 2rem 0 2rem 0;
-  box-sizing: border-box;
-`
+// const ImgStyle = styled.img`
+//   width: 225px;
+//   padding: 2rem 0 2rem 0;
+//   box-sizing: border-box;
+// `
 const SockCount = styled.span`
   color: #aeaeae;
   font-weight: 400;
