@@ -7,7 +7,6 @@ import SelectToken from './SelectToken'
 import IncrementToken from './IncrementToken'
 import { useAppContext } from '../context'
 import { ERROR_CODES, amountFormatter, TRADE_TYPES } from '../utils'
-import logo from './Gallery/logo.png'
 // import { ethers } from 'ethers'
 
 export function useCount() {
@@ -202,11 +201,6 @@ export default function BuyAndSell({
   return (
     <>
       <TopFrame>
-        {/* <button onClick={() => fake()}>test</button> */}
-        <Unicorn>
-          <img src={logo} style={{ width: 100, height: 35 }} alt={""}/>
-        </Unicorn>
-        {/* <ImgStyle src={test} alt="Logo" /> */}
         <InfoFrame pending={pending}>
           <CurrentPrice>
             {/* {dollarPrice && `$${amountFormatter(dollarPrice, 18, 2)} USD`} */}
@@ -298,13 +292,13 @@ const TopFrame = styled.div`
   box-sizing: border-box;
 `
 
-const Unicorn = styled.p`
-  width: 100%;
-  color: #fff;
-  font-weight: 600;
-  margin: 0px;
-  font-size: 16px;
-`
+// const Unicorn = styled.p`
+//   width: 100%;
+//   color: #fff;
+//   font-weight: 600;
+//   margin: 0px;
+//   font-size: 16px;
+// `
 
 const InfoFrame = styled.div`
   opacity: ${props => (props.pending ? 0.6 : 1)};
