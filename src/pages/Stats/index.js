@@ -16,7 +16,7 @@ export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOC
         <Title>HFSP Stats</Title>
         <Description>
           <p>
-            <img src={test} style={{ width: 13, height: 13, marginRight:5 }} alt=""/>
+            <img src={test} style={{ width: 13, height: 13, marginRight: 5 }} alt="" />
             Initial HFSP
           </p>
           <p>500</p>
@@ -45,6 +45,7 @@ export default function Body({ totalSupply, reserveSOCKSToken, ready, balanceSOC
           <br />
           <br />
           <a
+            style={{ color: '#fc0205' }}
             href="https://medium.com/frst/money-laundry-the-rise-of-the-crypto-sock-market-f979aafc3796"
             target="_blank"
             rel="noopener noreferrer"

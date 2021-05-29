@@ -25,7 +25,7 @@ export function Header({ totalSupply, ready, balanceSOCKS, setShowConnect }) {
     <HeaderFrame balanceSOCKS={balanceSOCKS}>
       <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
         <Unicorn>
-          <img src={logo} style={{ width: 100, height: 35}} alt={""} />
+          <img src={logo} style={{ width: 100, height: 35 }} alt={''} />
         </Unicorn>
       </Link>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -176,7 +176,7 @@ export default function Body({
           <div style={{ marginBottom: '4px' }}>
             Delivered on demand.{' '}
             <a
-            style={{color: "#fc0205"}}
+              style={{ color: '#fc0205' }}
               href="/"
               onClick={e => {
                 e.preventDefault()
